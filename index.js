@@ -39,7 +39,8 @@ app.get('/captcha', async function(req, res) {
     try {
         const captcha = await axios.get(base_url + './c.php', {
             jar: cookie_jar,
-            responseType: 'arraybuffer'
+            responseType: 'arraybuffer',
+            timeout: 3000
         });
         let token = null;
 
@@ -80,7 +81,8 @@ app.post('/login', async function(req, res) {
             submit1: 'Login'
         }), {
             jar: cookie_jar,
-            withCredentials: true
+            withCredentials: true,
+            timeout: 3000
         });
 
         if (!login.data.includes('/menusdm.html')) {
@@ -110,7 +112,8 @@ app.post('/login', async function(req, res) {
 
         await axios.get(base_url + session_path + 'menusdm.html', {
             jar: cookie_jar,
-            withCredentials: true
+            withCredentials: true,
+            timeout: 3000
         });
         cookie_jar.toJSON().cookies.forEach(function(cookie) {
             if (cookie.key === 'nama_areack') data.prodi = cookie.value.replace(/\+/g, ' ');
@@ -118,7 +121,8 @@ app.post('/login', async function(req, res) {
 
         const biodata = await axios.get(base_url + session_path + 'editbiodatamhs.html', {
             jar: cookie_jar,
-            withCredentials: true
+            withCredentials: true,
+            timeout: 3000
         });
         const biodata_dom = new jsdom.JSDOM(biodata.data);
         const _input_telepon = biodata_dom.window.document.querySelector('input[name="telpon2"]');
