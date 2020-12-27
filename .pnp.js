@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["axios", "npm:0.21.0"],
+            ["axios", "npm:0.21.1"],
             ["axios-cookiejar-support", "virtual:696f6f93e2602d53c11f568598a0be977b3eb9f2c0e1eca2f036de148041818859d454b9cfcb40905dca21aa72d00ad4a88fce62577eba0e373c04b5bf81773e#npm:1.0.1"],
             ["body-parser", "npm:1.19.0"],
             ["express", "npm:4.17.1"],
@@ -166,10 +166,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["axios", [
-        ["npm:0.21.0", {
-          "packageLocation": "./.yarn/cache/axios-npm-0.21.0-9223cb0552-4b08ecab39.zip/node_modules/axios/",
+        ["npm:0.21.1", {
+          "packageLocation": "./.yarn/cache/axios-npm-0.21.1-d192f6b3b3-864fb7b5d0.zip/node_modules/axios/",
           "packageDependencies": [
-            ["axios", "npm:0.21.0"],
+            ["axios", "npm:0.21.1"],
             ["follow-redirects", "npm:1.13.0"]
           ],
           "linkType": "HARD",
@@ -190,7 +190,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/axios", null],
             ["@types/tough-cookie", null],
             ["@types/types__tough-cookie", null],
-            ["axios", "npm:0.21.0"],
+            ["axios", "npm:0.21.1"],
             ["is-redirect", "npm:1.0.0"],
             ["pify", "npm:5.0.0"],
             ["tough-cookie", "npm:4.0.0"]
@@ -966,7 +966,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["login_cbis", "workspace:."],
-            ["axios", "npm:0.21.0"],
+            ["axios", "npm:0.21.1"],
             ["axios-cookiejar-support", "virtual:696f6f93e2602d53c11f568598a0be977b3eb9f2c0e1eca2f036de148041818859d454b9cfcb40905dca21aa72d00ad4a88fce62577eba0e373c04b5bf81773e#npm:1.0.1"],
             ["body-parser", "npm:1.19.0"],
             ["express", "npm:4.17.1"],
