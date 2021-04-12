@@ -11,8 +11,8 @@
         "axios-cookiejar-support": "^1.0.1",
         "body-parser": "^1.19.0",
         "express": "^4.17.1",
-        "jsdom": "^16.4.0",
-        "qs": "^6.9.4",
+        "jsdom": "^16.5.3",
+        "qs": "^6.10.1",
         "tough-cookie": "^4.0.0"
     }
 }
